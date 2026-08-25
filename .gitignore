@@ -1,0 +1,86 @@
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+
+docker.env
+# -----------------------------------------------------------------
+# Node / Vite / general JavaScript ecosystem
+# -----------------------------------------------------------------
+node_modules/
+dist/
+.build/
+.cache/
+.vite/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+package-lock.json
+package.json
+
+# -----------------------------------------------------------------
+# Environment files – contain secrets, do NOT commit
+# -----------------------------------------------------------------
+# Vite .env files (any file that starts with .env)
+.env
+.env.*
+# Supabase local env (you already have a .env under the “supabase” folder)
+supabase/.env
+supabase/.branches/*
+supabase/.temp/*
+supabase/.start-secrets/*
+supabase/.agent/*
+supabase/migrations/*
+supabase/config.toml
+supabase/pg_graphql/*
+supabase/bin/*
+
+# Optional – if you keep a .env.example for documentation, keep that **but**
+# make sure the real .env is ignored.
+# .env.example   ← keep this (it’s harmless)
+
+# -----------------------------------------------------------------
+# TypeScript / build artefacts
+# -----------------------------------------------------------------
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+*.d.ts
+*.js.map
+
+# -----------------------------------------------------------------
+# Miscellaneous generated files
+# -----------------------------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.tmp
+*.svelte-kit
+.next/
+out/
+coverage/
+*.tgz
